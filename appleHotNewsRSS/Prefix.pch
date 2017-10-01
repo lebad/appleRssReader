@@ -1,0 +1,15 @@
+//
+//  Prefix.pch
+//  appleHotNewsRSS
+//
+//  Created by andrey on 30/09/2017.
+//  Copyright © 2017 AndreyLebedev. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import "AHNNews.h"
+#import "NSString+AHNNews.h"
+
+#endif /* Prefix_pch */
