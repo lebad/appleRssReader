@@ -19,6 +19,7 @@
 
 - (void)dealloc {
 	self.queue = nil;
+	self.newsOperation = nil;
 	self.newsArray = nil;
 	[super dealloc];
 }

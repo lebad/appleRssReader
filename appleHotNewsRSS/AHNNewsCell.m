@@ -20,6 +20,12 @@
 
 @implementation AHNNewsCell
 
+- (void)dealloc {
+	self.titleLabel = nil;
+	self.descriptionLabel = nil;
+	[super dealloc];
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier {
 	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
 	if (self) {
