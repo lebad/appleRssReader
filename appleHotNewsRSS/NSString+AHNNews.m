@@ -15,15 +15,13 @@
 	return [self mySizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
 }
 
-- (CGSize)mySizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode
-{
+- (CGSize)mySizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode {
+	NSMutableParagraphStyle *paragraph = [[[NSMutableParagraphStyle alloc] init] autorelease];
+	paragraph.lineBreakMode = lineBreakMode;
+	
 	NSDictionary *attrs = @{
 							NSFontAttributeName: font,
-							NSParagraphStyleAttributeName: ({
-								NSMutableParagraphStyle *p = [NSMutableParagraphStyle new];
-								p.lineBreakMode = lineBreakMode;
-								p;
-							}),
+							NSParagraphStyleAttributeName: paragraph,
 							};
 	return [self boundingRectWithSize:size
 							  options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
