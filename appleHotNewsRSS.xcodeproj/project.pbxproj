@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55102DDE1F8017810092B242 /* AHNNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55102DDD1F8017810092B242 /* AHNNewsCell.m */; };
 		55102DE71F8025480092B242 /* NSString+AHNNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 55102DE61F8025480092B242 /* NSString+AHNNews.m */; };
+		5552A3561F824A2C00F2C5C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5552A3551F824A2C00F2C5C1 /* Launch Screen.storyboard */; };
 		55AB34001F81574100AF4281 /* AHNFeedWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AB33FF1F81574100AF4281 /* AHNFeedWebViewController.m */; };
 		55B280701F7FB19900CE1B00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2806F1F7FB19900CE1B00 /* AppDelegate.m */; };
 		55B280781F7FB19900CE1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B280771F7FB19900CE1B00 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		55102DE01F8018670092B242 /* AHNNewsItemPresentableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNNewsItemPresentableProtocol.h; sourceTree = "<group>"; };
 		55102DE51F8025480092B242 /* NSString+AHNNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AHNNews.h"; sourceTree = "<group>"; };
 		55102DE61F8025480092B242 /* NSString+AHNNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AHNNews.m"; sourceTree = "<group>"; };
+		5552A3551F824A2C00F2C5C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		55AB33FE1F81574100AF4281 /* AHNFeedWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHNFeedWebViewController.h; sourceTree = "<group>"; };
 		55AB33FF1F81574100AF4281 /* AHNFeedWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHNFeedWebViewController.m; sourceTree = "<group>"; };
 		55B2806B1F7FB19900CE1B00 /* appleHotNewsRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleHotNewsRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				55102DE51F8025480092B242 /* NSString+AHNNews.h */,
 				55102DE61F8025480092B242 /* NSString+AHNNews.m */,
 				55BC579E1F7FD89E000498F5 /* Prefix.pch */,
+				5552A3551F824A2C00F2C5C1 /* Launch Screen.storyboard */,
 				55B280771F7FB19900CE1B00 /* Assets.xcassets */,
 				55B2807C1F7FB19900CE1B00 /* Info.plist */,
 				55B2807D1F7FB19900CE1B00 /* main.m */,
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5552A3561F824A2C00F2C5C1 /* Launch Screen.storyboard in Resources */,
 				55B280781F7FB19900CE1B00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,7 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
